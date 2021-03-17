@@ -1,0 +1,38 @@
+body {
+  background-color: ivory;
+}
+#yksi {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #8B4513;
+  padding: 10px;
+  background-color: #FFF8DC;
+}
+#kaksi {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #8B4513;
+  padding: 10px;
+  background-color: #FFEBCD
+}
+#kolme {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #8B4513;
+  padding: 10px;
+  background-color: #FFE4C4;
+}
+#neljä {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #8B4513;
+  padding: 10px;
+  background-color: #FFDEAD;
+}
+#viisi {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #8B4513;
+  padding: 10px;
+  background-color: #F5DEB3;
+}
