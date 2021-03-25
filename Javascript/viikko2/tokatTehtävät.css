@@ -1,8 +1,31 @@
+body {
+width: 500px;
+margin: auto;
+background-color: #f9f2ec;
+}
+h1 {
+  font-family: 'Chango', cursive;
+  color: #604020;
+}
 .tehtävä {
   font-family: sans-serif;
   background-color: #e6ccb3;
-  width: auto;
-  padding: 5px;
-  margin: auto;
-
+  margin: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+#eka {
+  border: solid #d2a679 2px;
+}
+#toka {
+  border: solid #d2a679 2px;
+}
+#kolmas {
+  border: solid #d2a679 2px;
+}
+#neljäs {
+  border: solid #d2a679 2px;
+}
+#viides {
+  border: solid #d2a679 2px;
 }
