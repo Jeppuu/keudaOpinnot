@@ -3,47 +3,53 @@
   <head>
     <meta charset="utf-8">
     <script src="tokatTehtävät.js"></script>
-    <title>Viikko 2</title>
+    <link href= "tokatTehtävät.css" type="text/css" rel="stylesheet"/>
+    <title>2. viikon perustehtävät</title>
   </head>
   <body>
     <h1>Toisen viikon toiset tehtävät</h1>
     <!-- ensimmäinen tehtävä -->
-    <label for="luku">Syötä jokin luku:</label>
-    <input type="text" id="luku" value="">
-    <button onclick="posi()">Lähetä</button>
-    <br>
+    <article class="tehtävä">
+      <label for="luku">Syötä jokin luku:</label>
+      <input type="text" id="luku" value="">
+      <button onclick="posi()">Lähetä</button>
+    </article>
     <!-- toinen tehtävä -->
-    <label for="paiva">Syötä jonkin viikonpäivän numero:</label>
-    <input type="text" id="paiva" value="">
-    <button onclick="paivat()">Lähetä</button>
+    <article class="tehtävä">
+      <label for="paiva">Syötä jonkin viikonpäivän numero:</label>
+      <input type="text" id="paiva" value="">
+      <button onclick="paivat()">Lähetä</button>
+    </article>
     <!-- kolmas tehtävä -->
-    <br>
-    <label for="vuosi">Syötä jokin vuosiluku:</label>
-    <input type="text" id="vuosi" value="">
-    <button onclick="vuosi()">Lähetä</button>
+    <article class="tehtävä">
+      <label for="vuosi">Syötä jokin vuosiluku:</label>
+      <input type="text" id="vuosi" value="">
+      <button onclick="vuosi()">Lähetä</button>
+    </article>
     <!-- neljäs tehtävä -->
-    <br>
-    <p>Syötä viisi lukua</p>
-    <label for="luku1">Syötä 1. luku:</label>
-    <input type="number" id="luku1" value="">
+    <article class="tehtävä" id="viides">
+      <p>Syötä viisi lukua</p>
+      <label for="luku1">Syötä 1. luku:</label>
+      <input type="number" id="luku1" value="">
 
-    <label for="luku2">Syötä 2. luku:</label>
-    <input type="number" id="luku2" value="">
+      <label for="luku2">Syötä 2. luku:</label>
+      <input type="number" id="luku2" value="">
 
-    <label for="luku3">Syötä 3. luku:</label>
-    <input type="number" id="luku3" value="">
+      <label for="luku3">Syötä 3. luku:</label>
+      <input type="number" id="luku3" value="">
 
-    <label for="luku4">Syötä 4. luku:</label>
-    <input type="number" id="luku4" value="">
+      <label for="luku4">Syötä 4. luku:</label>
+      <input type="number" id="luku4" value="">
 
-    <label for="luku5">Syötä 5. luku:</label>
-    <input type="number" id="luku5" value="">
+      <label for="luku5">Syötä 5. luku:</label>
+      <input type="number" id="luku5" value="">
 
-    <button onclick="summa()">Lähetä</button>
+      <button onclick="summa()">Lähetä</button>
+    </article>
     <!-- viides tehtava -->
-    <br>
-    <label for="numero">Syötä jokin luku:</label>
-    <input type="text" id="numero" value="">
-    <button onclick="kertotaulu()">Lähetä</button>
+    <article class="tehtävä">
+      <label for="numero">Syötä jokin luku:</label>
+      <input type="text" id="numero" value="">
+      <button onclick="kertotaulu()">Lähetä</button>
   </body>
 </html>
