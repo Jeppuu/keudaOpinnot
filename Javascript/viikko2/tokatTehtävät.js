@@ -1,4 +1,4 @@
-//ensimmäinen tehtävä testaa onko luku negatiivinen vai positiivinen
+//ensimmäinen tehtävä testaa onko syötetty luku negatiivinen vai positiivinen
 function posi() {
   var luku = document.getElementById('luku').value;
   if( luku >= 0) {
@@ -7,7 +7,7 @@ function posi() {
     console.log("luku on negatiivinen");
   }
 }
-//toinen tehtävä palauta lukua vastaava viikonpäivä
+//toinen tehtävä palautaa syötettyä lukua vastaavan viikonpäivän
 function paivat () {
   var paiva = document.getElementById('paiva').value;
   switch (paiva) {
@@ -36,7 +36,7 @@ function paivat () {
       console.log('Anna luku 1-7 väliltä!');
   }
 }
-// kolmas tehtävä onko vuosi karkausvuosi
+// kolmas tehtävä selvittää onko syötetty vuosi karkausvuosi
 function vuosi () {
   var vuosiluku = document.getElementById('vuosi').value;
   if (vuosiluku % 4 == 0 && vuosiluku % 100 !== 0) {
@@ -47,12 +47,24 @@ function vuosi () {
     console.log('Vuosi ei ole karkausvuosi');
   }
 }
-//neljäs tehtävä laskee summan ja keskiarvon
+//neljäs tehtävä laskee syötetyn luvun summan ja keskiarvon
 function summa() {
-  var luku1 = document.getElementById('luku1').value;
-  var luku2 = document.getElementById('luku2').value;
-  var luku3 = document.getElementById('luku3').value;
-  var luku4 = document.getElementById('luku4').value;
-  var luku5 = document.getElementById('luku5').value;
-  var summa,keskiarvo;
+  var luku1 = parseInt(document.getElementById('luku1').value);
+  var luku2 = parseInt(document.getElementById('luku2').value);
+  var luku3 = parseInt(document.getElementById('luku3').value);
+  var luku4 = parseInt(document.getElementById('luku4').value);
+  var luku5 = parseInt(document.getElementById('luku5').value);
+
+  var summa = luku1 + luku2 + luku3 + luku4 + luku5;
+  var keskiarvo = summa/5;
+  console.log('lukujen summa on ' + summa + ' ja keskiarvo on: ' + keskiarvo);
+}
+//viides tehtävä jossa tulostetaan syötetyn luvun kertotaulu
+function kertotaulu() {
+  var luku = document.getElementById('numero').value;
+  var lause= "";
+  for (i = 1; i <= 10; i++) {
+   lause += i + " kertaa " + luku + " on " + i * luku + "\n";
+}
+  console.log(lause);
 }
