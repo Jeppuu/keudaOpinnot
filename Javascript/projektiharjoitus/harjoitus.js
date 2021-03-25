@@ -4,7 +4,7 @@ function tarkistaLomake() {
   var salasana = form.salasana.value;
   var koneenKayttaja = form.kone;
   var mielipide = form.mieli;
-  var lempiaine = form.lempiAine;
+  var lempiaine = form.aineet;
   var palaute = form.palaute.value;
   //tarkistetaan, ettei nimikenttä ole tyhjä
   if (nimi == "") {
