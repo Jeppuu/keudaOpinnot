@@ -4,7 +4,14 @@
   ------------
   Add a label to each of the input fields: username, password, confirm password
 */
+document.getElementById('username')
+.insertAdjacentHTML('beforeBegin','<label for= "username">Username: </label>');
 
+document.getElementById('password')
+.insertAdjacentHTML('beforeBegin','<label for= "password">Password: </label>');
+
+document.getElementById('confirmPassword')
+.insertAdjacentHTML('beforeBegin','<label for= "confirmPassword">Confirm Password: </label>');
 
 /*
   Exercise 02
