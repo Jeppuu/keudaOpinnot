@@ -4,11 +4,14 @@
   ------------
   Add a label to each of the input fields: username, password, confirm password
 */
-document.getElementById('username').insertAdjacentHTML('beforeBegin','<label for= "username">Username: </label>');
+document.getElementById('username')
+.insertAdjacentHTML('beforeBegin','<label for= "username">Username: </label>');
 
-document.getElementById('password').insertAdjacentHTML('beforeBegin','<label for= "password">Password: </label>');
+document.getElementById('password')
+.insertAdjacentHTML('beforeBegin','<label for= "password">Password: </label>');
 
-document.getElementById('confirmPassword').insertAdjacentHTML('beforeBegin','<label for= "confirmPassword">Confirm Password: </label>');
+document.getElementById('confirmPassword')
+.insertAdjacentHTML('beforeBegin','<label for= "confirmPassword">Confirm Password: </label>');
 
 /*
   Exercise 02
@@ -27,6 +30,12 @@ const checkInput = (event) => {
 
 document.getElementById('username')
 .addEventlistener('blur', checkInput);
+document.getElementById('password')
+.addEventlistener('blur', checkInput);
+document.getElementById('confirmPassword')
+.addEventlistener('blur', checkInput);
+
+!!VIDEO AT 5:49!! script source ei toimi
 /*
   Exercise 03
   -----------
