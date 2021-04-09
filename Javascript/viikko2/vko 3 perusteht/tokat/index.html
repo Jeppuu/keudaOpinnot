@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tokat.css">
+    <title>viikon 3 toiset perustehtävät</title>
+  </head>
+  <body>
+    <article class="teht" id="1">
+      <h1>Tehtävä 1</h1>
+      <p>Pelataan scrabblea! Syötä minulle sana ja kerron sinulle
+      kuinka monta pistettä sillä ansaitsit!</p>
+      <label for="scrabble">Kirjoita sana:</label>
+      <input type="text" id="scrabble" value="">
+      <input type="button" class="button" value="Lähetä!" onclick="scrabble()">
+      <div id="vastaus1"></div>
+    </article>
+    <article class="teht" id="2">
+      <h1>Tehtävä 2</h1>
+      <p>Tahdotko lotota? Paina nappulaa ja arvon sinulle 7 lottonumeroa!</p>
+      <input type="button" class="button" value="Lottoa!" onclick="lotto()">
+      <div id="vastaus2"></div>
+    </article>
+    <article class="teht" id="3">
+      <h1>Tehtävä 3</h1>
+      <p>Tahdotko nähdä hienon taulukon? Paina nappia niin näet sen!</p>
+      <input type="button" class="button" value="Näytä taulukko!" onclick="taulukko()">
+      <div id="vastaus3"></div>
+    </article>
+    <article class="teht" id="4">
+      <h1>Tehtävä 4</h1>
+      <p>Pelataan korttia! Paina nappia, niin jaan sinulle viisi korttia!</p>
+      <input type="button" class="button" value="Jaa kortit!" onclick="jaaKortit()">
+      <div id="vastaus4"></div>
+    </article>
+
+
+
+    <script src="tokat.js" charset="utf-8"></script>
+  </body>
+</html>
