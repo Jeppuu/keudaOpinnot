@@ -1,0 +1,9 @@
+.tehtava {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  border-left: 20px solid #ff66b3;
+  border-bottom: 3px dashed #ff66b3;
+  background-color: #ff99cc;
+}
