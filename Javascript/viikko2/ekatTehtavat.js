@@ -25,11 +25,11 @@ function jarjesta() {
 }
 //Tehtävä 2: etsi viidestä syötetystä luvusta suurin
 function suurin() {
-  var l1 = document.getElementById('2eka').value;
-  var l2 = document.getElementById('2toka').value;
-  var l3 = document.getElementById('2kolmas').value;
-  var l4 = document.getElementById('2neljäs').value;
-  var l5 = document.getElementById('2viides').value;
+  var l1 = parseInt(document.getElementById('2eka').value);
+  var l2 = parseInt(document.getElementById('2toka').value);
+  var l3 = parseInt(document.getElementById('2kolmas').value);
+  var l4 = parseInt(document.getElementById('2neljäs').value);
+  var l5 = parseInt(document.getElementById('2viides').value);
   var array = [l1,l2,l3,l4,l5];
   array.sort();
   alert(array[4]);
