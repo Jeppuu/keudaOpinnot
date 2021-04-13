@@ -1,3 +1,4 @@
+//tehtävä 1 scrabble pisteyttää sanat
 function scrabble() {
   let pisteet = 0;
   let sana = document.getElementById('scrabble').value;
@@ -72,38 +73,41 @@ function scrabble() {
     '<p>' + 'sait ' + pisteet + ' pistettä sanasta ' + sana +'!';
   }
 }
-
+//tehtävä kaksi arpoo lottonumerot 1-40
 function lotto() {
-  var n1 = Math.floor(Math.random() * 100);
-  var n2 = Math.floor(Math.random() * 100);
-  var n3 = Math.floor(Math.random() * 100);
-  var n4 = Math.floor(Math.random() * 100);
-  var n5 = Math.floor(Math.random() * 100);
-  var n6 = Math.floor(Math.random() * 100);
-  var n7 = Math.floor(Math.random() * 100);
+  var n1 = Math.floor(Math.random() * 40);
+  var n2 = Math.floor(Math.random() * 40);
+  var n3 = Math.floor(Math.random() * 40);
+  var n4 = Math.floor(Math.random() * 40);
+  var n5 = Math.floor(Math.random() * 40);
+  var n6 = Math.floor(Math.random() * 40);
+  var n7 = Math.floor(Math.random() * 40);
   document.getElementById('vastaus2')
   .innerHTML = n1 + ', ' + n2 + ', ' + n3+ ', ' + n4+ ', ' + n5+ ', ' + n6+ ', ' + n7;
 }
-
+//tehtävä 3 piirtää taulukon
 function taulukko() {
   //en saa tätä toimimaan! TypeError: undefined is not an object (evaluating 'arr[i].length')
-  var arr = [[3,5,6,8],[56,34,91,27],[4,9,12,14,][67,90,83,59],[45,65,82,34]];
-  var taulukko = '<table border="1">';
+   var arr = [
+    [3,5,6,8],
+    [56,34,91,27],
+    [4,9,12,14,],
+    [67,90,83,59];
+  var taulukko = '<table border= "1">';
   for (var i = 0; i < arr.length; i++) {
     taulukko += '<tr>';
-    for(var j = 0; j < arr[i].length; j++) {
+    for(var j = 0; j < arr.length; j++) {
       taulukko += '<td>' + arr[i][j] + '</td>';
     }
     taulukko += '</tr>';
   }
-  taulukko += '</table>';
+  taulukko += '</table>'; 
   document.getElementById('vastaus3').innerHTML = taulukko;
 }
-
+//tehtävä 5 jakaa viisi pelikorttia
 function jaaKortit() {
   var pakka = [''];
  var maat = ['&#9828;', '&#9827;', '&#9826;', '&#9825;'];
- //var maat = ['pa','ri','ru', 'he']
  var numerot = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
  laskuri = 0;
  for(m = 0; m < maat.length; m++) {
