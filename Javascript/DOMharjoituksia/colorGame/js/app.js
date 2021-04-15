@@ -22,7 +22,7 @@ function setupModeButtons() {
       modeButtons[0].classList.remove("selected");
       modeButtons[1].classList.remove("selected");
       this.classList.add("selected");
-      this.textContent == "Easy" ? numSquares = 3; numSquares = 6;
+      this.textContent == "Easy" ? numSquares = 3: numSquares = 6;
       reset();
     });
   }
@@ -36,13 +36,13 @@ function setupSquares () {
       var clickedColor = this.style.background;
       //compare color to pickedColor
       if (clickedColor == pickedColor) {
-        messageDisplay.textContent = "Correct!";
-        resetButton.textContent = "Play Again?";
+        messageDisplay.textContent = "Oikein!";
+        resetButton.textContent = "Pelaa uudelleen?";
         changeColors(clickedColor);
         h1.style.background = clickedColor;
       } else {
         this.style.background = "#232323";
-        messageDisplay.textContent = "Try Again"
+        messageDisplay.textContent = "Kokeile toista väriä!"
       }
     });
   }
@@ -54,7 +54,7 @@ function reset() {
   pickedColor = pickColor();
   //change colorDisplay to match picked color
   colorDisplay.textContent = pickedColor;
-  resetButton.textContent = "New Colors"
+  resetButton.textContent = "Uudet värit"
   messageDisplay.textContent = "";
   //change colors of numSquares
   for (var i = 0; i < squares.length; i++) {
@@ -65,7 +65,7 @@ function reset() {
       squares[i].style.display = "none";
     }
   }
-  h1.style.background = "steelblue";
+  h1.style.background = "#ffcc00";
 }
 resetButton.addEventListener("click", function() {
   reset();
@@ -73,7 +73,7 @@ resetButton.addEventListener("click", function() {
 
 function changeColors (color) {
   //loop through all squares
-  for(var 1 = 0; i < squares.length; i++) {
+  for(var i = 0; i < squares.length; i++) {
     //change each color to match given colors
     squares[i].style.background = color;
   }
