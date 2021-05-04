@@ -21,19 +21,16 @@ document.getElementById('confirmPassword')
 const checkInput = (event) => {
   const errorElement = Array.from(event.target.parentNode.querySelectorAll('span'));
   if(event.target.value === ''&& !errorElement.length) {
-    event.target.insertAdjacentHTML('afterEnd', 'span class="text-danger">Required</span>')
+    event.target.insertAdjacentHTML('afterEnd', '<span class="text-danger">Required</span>')
   }
   if (errorElement && event.target.value !== '') {
     errorElement.forEach(elem => elem.remove());
   }
 };
 
-document.getElementById('username')
-.addEventlistener('blur', checkInput);
-document.getElementById('password')
-.addEventlistener('blur', checkInput);
-document.getElementById('confirmPassword')
-.addEventlistener('blur', checkInput);
+document.getElementById('username').addEventListener('blur', checkInput);
+document.getElementById('password').addEventListener('blur', checkInput);
+document.getElementById('confirmPassword').addEventListener('blur', checkInput);
 
 
 /*
@@ -42,7 +39,7 @@ document.getElementById('confirmPassword')
   Add a further validation to check if the user input in the password and confirm password inputs match.  Show an error message if they do not.
 */
 document.getElementById('confirmPassword')
-.addEventlistener('blur', (event) => {
+.addEventListener('blur', (event) => {
   if (event.target.value != document.getElementById('password').value) {
     event.target.insertAdjacentHTML('afterEnd', '<span class= "text-danger">Passwords should match</span>');
 
@@ -56,7 +53,7 @@ Ensure the ‘Register’ button is disabled until the user has entered valid da
 */
 const btn = document.querySelector('button');
 btn.setAttribute('disabled', 'disabled');
-document.getElementById('registrationForm').addEventlistener('change', (event) => {
+document.getElementById('registrationForm').addEventListener('change', (event) => {
   const formIsFilled = Array.from(document.querySelectorAll('input')).every(input => input.value);
   if(formIsFilled) {
     btn.removeAttribute('disabled');
@@ -72,7 +69,7 @@ document.getElementById('registrationForm').addEventlistener('change', (event) =
 When the user clicks the ‘Register’ button, a message should be displayed informing them of a successful user registration.
 */
 const form = document.getElementById('registrationForm');
-form.addEventlistener('submit', (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const alert = document.createElement('div');
   alert.classList.add('alert', 'alert-success');
